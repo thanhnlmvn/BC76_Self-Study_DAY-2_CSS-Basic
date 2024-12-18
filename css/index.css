@@ -1,0 +1,54 @@
+/*  
+    h1 : Selector 
+    Text-align : property
+    Center : Value
+*/
+
+/* Selector tag name  */
+h1 {
+  text-align: center;
+}
+
+/* Selector class name  */
+.heading2,
+p {
+  background-color: green;
+}
+
+/* Selector id name  */
+#title2 {
+  color: white;
+}
+
+/* Parent Selector */
+.section1 p {
+  font-size: 30px;
+}
+
+.section1 span {
+  color: red;
+}
+
+/* Get all Selector  */
+* {
+  font-weight: bold;
+}
+
+/* Gọi con trực tiếp của selector  */
+.section1 > p {
+}
+
+/* Lấy thẻ gần nhất sau div  */
+/* div + h3 {
+  background-color: red;
+} */
+
+/* Lấy tất cả các thẻ sau div  */
+div ~ h3 {
+  background-color: yellow;
+}
+
+/* attribute selector  */
+p[class='section1'] {
+  background-color: violet;
+}
