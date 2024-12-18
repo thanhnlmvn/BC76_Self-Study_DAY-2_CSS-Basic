@@ -1,54 +1,34 @@
-/*  
-    h1 : Selector 
-    Text-align : property
-    Center : Value
-*/
-
-/* Selector tag name  */
+/* Điểm ưu tiên = 1 */
 h1 {
-  text-align: center;
+  background-color: red;
 }
 
-/* Selector class name  */
-.heading2,
-p {
+/* Điểm ưu tiên = 110 */
+.section1 #title1 {
+  background-color: blue;
+}
+
+/* Điểm ưu tiên = 100 */
+#title1 {
   background-color: green;
 }
 
-/* Selector id name  */
-#title2 {
-  color: white;
-}
-
-/* Parent Selector */
-.section1 p {
-  font-size: 30px;
-}
-
-.section1 span {
-  color: red;
-}
-
-/* Get all Selector  */
-* {
-  font-weight: bold;
-}
-
-/* Gọi con trực tiếp của selector  */
-.section1 > p {
-}
-
-/* Lấy thẻ gần nhất sau div  */
-/* div + h3 {
-  background-color: red;
-} */
-
-/* Lấy tất cả các thẻ sau div  */
-div ~ h3 {
+/* Điểm ưu tiên = 10 */
+.heading1 {
   background-color: yellow;
 }
 
-/* attribute selector  */
-p[class='section1'] {
-  background-color: violet;
+/* Điểm ưu tiên = 100 */
+#title1 {
+  background-color: pink;
+}
+
+/* Điểm ưu tiên = 110 ,code nằm bên dưới có độ ưu tiên cao hơn*/
+.section1 #title1 {
+  background-color: brown;
+}
+
+/* Điểm ưu tiên = 110 */
+.heading1#title1 {
+  background-color: purple;
 }
